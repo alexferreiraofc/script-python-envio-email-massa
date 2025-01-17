@@ -45,7 +45,7 @@ for email in emails:
     message['To'] = email
     message['Cc'] = cc_email
     # Assunto do email
-    message['Subject'] = "IPTU - Cambirela Imóveis"
+    message['Subject'] = "IPTU - Imóveis"
     message.attach(MIMEText(html, 'html'))
     message.attach(image)
     server.sendmail(sender_email, [email, cc_email], message.as_string())
